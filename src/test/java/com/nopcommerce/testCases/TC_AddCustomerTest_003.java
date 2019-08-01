@@ -31,6 +31,7 @@ public class TC_AddCustomerTest_003 extends BaseClass
 		AddcustomerPage addcust=new AddcustomerPage(driver);
 		
 		addcust.clickOnCustomersMenu();
+		driver.manage().timeouts().implicitlyWait(10, TimeUnit.SECONDS);
 		addcust.clickOnCustomersMenuItem();
 				
 		addcust.clickOnAddnew();
